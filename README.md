@@ -2,7 +2,7 @@
 
 Documentation site for the InDays iOS app.
 
-Hosted on GitHub Pages from the `/docs` directory. Static HTML — no build step.
+Hosted on GitHub Pages from the `/docs` directory.
 
 ## Pages
 
@@ -12,4 +12,4 @@ Hosted on GitHub Pages from the `/docs` directory. Static HTML — no build step
 
 ## Images
 
-App screenshots live in `docs/images/`. Captured from iOS and watchOS simulators.
+App screenshots live in `docs/images/`.
