@@ -1,0 +1,39 @@
+{
+  "name": "in-days-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Developer tooling for the InDays docs site.",
+  "scripts": {
+    "dev": "http-server docs -p 8080 -c-1",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:format",
+    "lint:js": "eslint \"docs/**/*.js\"",
+    "lint:css": "stylelint \"docs/**/*.css\"",
+    "lint:format": "prettier --check .",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.css": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.{html,md,json,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "eslint": "^9.24.0",
+    "globals": "^16.0.0",
+    "http-server": "^14.1.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
+    "stylelint": "^16.16.0",
+    "stylelint-config-standard": "^37.0.0"
+  }
+}
