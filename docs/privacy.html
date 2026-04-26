@@ -14,6 +14,7 @@
         <ul class="site-nav__links">
           <li><a href="features.html">Features</a></li>
           <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
           <li><a href="support.html">Support</a></li>
         </ul>
       </div>
@@ -21,29 +22,37 @@
 
     <main class="page page--fade-in">
       <h1>Privacy Policy</h1>
-      <p class="page-meta">Last updated: April 5, 2026</p>
+      <p class="page-meta">Last updated: April 26, 2026</p>
 
       <p class="intro">
         <strong>InDays</strong> is a workplace presence tracker that helps hybrid workers log
-        in-office days. This policy explains how the app handles your data&nbsp;&mdash;&nbsp;we keep
-        things simple and transparent.
+        in-office days. This policy explains what the app stores, what stays on your device, and
+        what is synced only when you choose to sign in.
       </p>
 
       <h2>Data We Collect</h2>
       <p>
-        InDays only stores the information you choose to enter while using the app. We do not
-        collect information in the background or through outside tracking.
+        InDays stores the information needed to run the app and the information you choose to enter.
+        We do not collect information for advertising, analytics, or tracking.
       </p>
+      <ul>
+        <li>Account details from sign-in providers, such as email address and provider name</li>
+        <li>Profile details you save, such as display name and primary office choice</li>
+        <li>In-office logs, including date, optional office location, and log source</li>
+        <li>Office locations you create, including optional address details</li>
+        <li>Saved history filters, date ranges, descriptions, and target settings</li>
+        <li>Reminder settings, such as reminder time, active days, and enabled status</li>
+      </ul>
 
       <h2>What Stays on Your Device</h2>
       <p>
-        The following data is stored on your device and only moves to another device if you choose
-        to sync:
+        InDays works without an account. When you continue without signing in, your app data is
+        stored locally in the app's on-device database and is not sent to our servers.
       </p>
       <ul>
-        <li>Profile details you save, such as display name and primary office choice</li>
+        <li>Local profile settings</li>
         <li>Logs (dates and optional office location)</li>
-        <li>Office locations you create, including optional address details</li>
+        <li>Office locations you create</li>
         <li>History filters and target settings</li>
         <li>Reminder preferences (time, active days, enabled/disabled)</li>
         <li>Apple Watch companion data (today's status, office name, week count)</li>
@@ -51,12 +60,13 @@
 
       <h2>Optional Syncing</h2>
       <p>
-        If you sign in, your data syncs securely so you can access it across devices. Syncing is
-        entirely optional&nbsp;&mdash;&nbsp;the app works without an account.
+        If you sign in, InDays syncs your profile, logs, office locations, and saved filters with
+        Supabase so you can back up your data and use it across devices. Syncing is entirely
+        optional&nbsp;&mdash;&nbsp;the app works without an account.
       </p>
       <p>
-        Synced data includes the same categories listed above plus the account details needed to
-        keep your profile connected.
+        Synced data is protected by user-level access controls so each signed-in user can access
+        only their own records.
       </p>
 
       <h2>Signing In</h2>
@@ -64,9 +74,28 @@
         InDays offers optional sign-in with Apple, Google, or GitHub so you can sync your data
         across devices. We never see or store your password.
       </p>
+      <p>
+        Depending on the provider, sign-in may provide account identifiers such as your email
+        address, provider user ID, display name, or profile metadata. These are used to create and
+        maintain your InDays account.
+      </p>
 
-      <h2>No Analytics or Tracking</h2>
-      <p>The app does not include analytics, advertising, or any form of user tracking.</p>
+      <h2>No Ads, Analytics, or Tracking</h2>
+      <p>
+        The app does not include advertising SDKs, analytics SDKs, or any form of user tracking. We
+        do not sell personal data.
+      </p>
+
+      <h2>Device Permissions</h2>
+      <p>
+        InDays may request notification permission if you enable reminders. The app does not request
+        device location, camera, microphone, contacts, photos, health, or calendar access.
+      </p>
+      <p>
+        Office locations are locations you create manually. If you use an arrival or departure
+        automation, that trigger is configured in Apple's Shortcuts app, not by InDays collecting
+        your location in the background.
+      </p>
 
       <h2>Reminders</h2>
       <p>
@@ -83,12 +112,27 @@
       <h2>Apple Watch</h2>
       <p>
         The optional companion Watch app syncs a snapshot of your logged status, primary office
-        name, and week count between your iPhone and Apple Watch. This data stays on your devices.
+        name, and week count between your iPhone and Apple Watch using Apple's device-to-device
+        watch connectivity. This data stays on your devices unless you have enabled account sync.
       </p>
       <p>
         Logging a day from the Watch sends the entry back to your phone, where it is stored and can
         be synced like any other log.
       </p>
+
+      <h2>Siri and Shortcuts</h2>
+      <p>
+        InDays provides a shortcut action to log today's in-office day. Shortcut activity uses the
+        same local logging and optional sync behavior as logging from the app.
+      </p>
+
+      <h2>Third-Party Services</h2>
+      <p>InDays uses the following services to operate optional account and sync features:</p>
+      <ul>
+        <li>Supabase for authentication, database storage, sync, and account deletion requests</li>
+        <li>Apple, Google, and GitHub for optional sign-in</li>
+        <li>Apple system services for notifications, Shortcuts, and Apple Watch connectivity</li>
+      </ul>
 
       <h2>Children's Privacy</h2>
       <p>
@@ -98,15 +142,22 @@
 
       <h2>How Your Data Is Protected</h2>
       <p>
-        Your synced data is protected so that each user can access only their own information. All
-        data sent between devices is encrypted in transit.
+        Your synced data is protected so each user can access only their own information. Data sent
+        between the app and our service providers is encrypted in transit.
       </p>
 
       <h2>Data Deletion</h2>
       <p>
-        You can delete individual log entries from within the app. To delete your account and all
-        synced data, open <strong>Profile &rarr; Account</strong> and use the
-        <strong>Delete account</strong> action.
+        You can delete individual log entries from History and delete saved office locations or
+        filters from their app screens. To clear all local data on this device, use
+        <strong>Wipe All Data</strong> in Profile.
+      </p>
+      <p>
+        To delete your signed-in account, synced app data, and local data on this device, open
+        <strong>Profile &rarr; Account</strong> and use the <strong>Delete account</strong> action.
+        InDays may retain a minimal deletion request record, such as email, provider, request
+        status, timestamp, and user agent, where needed for security, support, legal compliance, or
+        dispute resolution.
       </p>
 
       <h2>Changes to This Policy</h2>

@@ -8,6 +8,7 @@ Hosted on GitHub Pages from the `/docs` directory.
 
 - **Features** — `docs/features.html` (app screenshots and feature overview)
 - **Privacy Policy** — `docs/privacy.html`
+- **Terms & Conditions** — `docs/terms.html`
 - **Support & FAQ** — `docs/support.html`
 
 ## Images
