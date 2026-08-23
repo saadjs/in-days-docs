@@ -12,7 +12,7 @@
     <link rel="manifest" href="images/favicons/site.webmanifest" />
     <meta
       name="description"
-      content="Track your in-office days effortlessly with InDays for iPhone and Apple Watch. Log from Siri, Shortcuts, or Apple Watch. Sync with Apple, Google, or GitHub sign-in."
+      content="Track and plan your in-office days with InDays for iPhone and Apple Watch. Log from the Home Screen widget, Siri, Shortcuts, or your wrist, plan the days ahead, and hit your targets."
     />
     <meta name="theme-color" content="#ffffff" />
     <link rel="canonical" href="https://saadjs.github.io/in-days-docs/features.html" />
@@ -21,14 +21,14 @@
     <meta property="og:title" content="Features – InDays" />
     <meta
       property="og:description"
-      content="Track your in-office days effortlessly with InDays for iPhone and Apple Watch. Log from Siri, Shortcuts, or Apple Watch. Sync with Apple, Google, or GitHub sign-in."
+      content="Track and plan your in-office days with InDays for iPhone and Apple Watch. Log from the Home Screen widget, Siri, Shortcuts, or your wrist, plan the days ahead, and hit your targets."
     />
     <meta property="og:url" content="https://saadjs.github.io/in-days-docs/features.html" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Features – InDays" />
     <meta
       name="twitter:description"
-      content="Track your in-office days effortlessly with InDays for iPhone and Apple Watch. Log from Siri, Shortcuts, or Apple Watch. Sync with Apple, Google, or GitHub sign-in."
+      content="Track and plan your in-office days with InDays for iPhone and Apple Watch. Log from the Home Screen widget, Siri, Shortcuts, or your wrist, plan the days ahead, and hit your targets."
     />
     <script type="application/ld+json">
       {
@@ -37,7 +37,7 @@
         "name": "InDays",
         "operatingSystem": "iOS",
         "applicationCategory": "ProductivityApplication",
-        "description": "Track your in-office days effortlessly. Log from your iPhone, Apple Watch, Siri, or Shortcuts.",
+        "description": "Track and plan your in-office days. Log from your iPhone, Apple Watch, widgets, Siri, or Shortcuts.",
         "url": "https://saadjs.github.io/in-days-docs/features.html"
       }
     </script>
@@ -60,8 +60,9 @@
       <div class="features-hero">
         <h1>Your office days,<br />tracked effortlessly.</h1>
         <p class="intro">
-          Log from your iPhone, Apple Watch, Siri, or Shortcuts. Sign in with Apple, Google, or
-          GitHub when you want to back up and sync across devices.
+          Log from your iPhone, Apple Watch, widgets, Siri, or Shortcuts. Plan the days ahead and
+          track them against your targets. Sign in with Apple, Google, or GitHub when you want to
+          back up and sync across devices.
         </p>
         <a class="cta-button" href="https://testflight.apple.com/join/tYK39N6c">
           Join the TestFlight beta
@@ -74,42 +75,79 @@
         <div class="feature__text">
           <h2>Log your day</h2>
           <p>
-            Tap today to log it. Your primary office is attached
-            automatically&nbsp;&mdash;&nbsp;change it anytime or pick a different one per entry.
-            Need to catch up? Select up to 14&nbsp;days at once.
+            Tap today to log it. Your primary office is attached automatically. Change it anytime,
+            or pick a different one per entry. Need to catch up? Select up to 14&nbsp;days at once.
+          </p>
+          <p>
+            The Log tab also carries a month calendar of everything you've logged, plus progress on
+            your saved filters, so today's tap and the bigger picture sit on one screen.
           </p>
         </div>
         <div class="feature__visual">
           <div class="device-phone">
             <img
               src="images/log-tab.png"
-              alt="InDays Log tab showing calendar and Log Today button"
+              alt="InDays Log tab showing today's date, the NYC office, and the Log today button"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Planning -->
+      <section class="feature feature--reverse">
+        <div class="feature__text">
+          <h2>Plan the days ahead</h2>
+          <p>
+            Tap the days you intend to go in, up to a year out. Plans live alongside your logs
+            without becoming them: a planned day only counts as an office day once you actually log
+            it.
+          </p>
+          <p>
+            Every plan reads as <strong>upcoming</strong>, <strong>kept</strong> once you log that
+            date, or <strong>missed</strong> if the day passes without a log. Open a filter's
+            planner and InDays shows how many days you still need to place to hit its target.
+          </p>
+          <p>
+            Plan from the calendar on the Log tab, or from
+            <strong>History &rarr; Plan</strong> when you want the target and coverage in view.
+          </p>
+        </div>
+        <div class="feature__visual">
+          <div class="device-phone">
+            <img
+              src="images/plan.png"
+              alt="InDays planner showing 3 more days to place, with logged, planned, and missed days on an August calendar"
             />
           </div>
         </div>
       </section>
 
       <!-- History -->
-      <section class="feature feature--reverse">
+      <section class="feature">
         <div class="feature__text">
           <h2>Track your history</h2>
           <p>
-            See how many days you've been in the office over the last 30&nbsp;days, 60&nbsp;days, or
-            a custom range. Filter by location to compare across offices.
+            See how many days you've been in the office over the last 30&nbsp;days, 60&nbsp;days,
+            all time, or a custom range. Or tap a saved filter to jump straight to it. Filter by
+            location to compare across offices.
+          </p>
+          <p>
+            Got a day wrong? Open <strong>Manage logged days</strong> to change an entry's date or
+            office, or delete it outright.
           </p>
         </div>
         <div class="feature__visual">
           <div class="device-phone">
             <img
               src="images/history.png"
-              alt="InDays History tab showing 12 days in office over 30 days"
+              alt="InDays History tab showing 16 days in office with saved filter and location chips"
             />
           </div>
         </div>
       </section>
 
       <!-- Locations -->
-      <section class="feature">
+      <section class="feature feature--reverse">
         <div class="feature__text">
           <h2>Manage office locations</h2>
           <p>
@@ -134,7 +172,7 @@
       </section>
 
       <!-- Shortcuts -->
-      <section class="feature feature--reverse">
+      <section class="feature">
         <div class="feature__text">
           <h2>Automate with Shortcuts</h2>
           <p>
@@ -185,30 +223,55 @@
 
       <!-- Custom Filters -->
       <section class="feature">
-        Pin up to three filters to keep them available in widgets.
         <div class="feature__text">
           <h2>Custom filters &amp; goals</h2>
           <p>
-            Save date ranges as reusable filters, start from prebuilt ranges, and set a target
+            Save date ranges as reusable filters, start from a prebuilt range, and set a target
             number of in-office days. InDays tracks your progress and tells you when the goal is
             met.
           </p>
           <p>
-            History keeps your saved filters handy so you can jump back to the ranges you use most.
+            Keep up to 12&nbsp;saved filters, pin 3&nbsp;of them for widgets, and open any one of
+            them in the planner to map out the days you still need.
           </p>
         </div>
         <div class="feature__visual">
           <div class="device-phone">
             <img
-              src="images/widget-filters.png"
-              alt="Saved filters screen showing pinned primary and second widget filters"
+              src="images/filters.png"
+              alt="Saved filters screen showing progress against targets, with Primary, Plan days, Edit, and Delete actions"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Reminders -->
+      <section class="feature feature--reverse">
+        <div class="feature__text">
+          <h2>Reminders that fit your week</h2>
+          <p>
+            Turn on the end-of-day prompt in <strong>Profile &rarr; Reminders</strong>, pick the
+            time, and choose which weekdays it should ask. Tap <strong>Log today</strong> straight
+            from the notification to record the day without opening the app.
+          </p>
+          <p>
+            Planned a day? InDays adds a nudge the evening before, then asks again that evening if
+            it still isn't logged. Reminders are scheduled on your device, and nothing is sent to a
+            server.
+          </p>
+        </div>
+        <div class="feature__visual">
+          <div class="device-phone">
+            <img
+              src="images/lockscreen-notification.png"
+              alt="Lock Screen notification asking whether you went to the office today"
             />
           </div>
         </div>
       </section>
 
       <!-- Widgets -->
-      <section class="feature feature--reverse">
+      <section class="feature">
         <div class="feature__text">
           <h2>Widgets for quick progress</h2>
           <p>
@@ -238,12 +301,12 @@
       </section>
 
       <!-- Apple Watch -->
-      <section class="feature">
+      <section class="feature feature--reverse">
         <div class="feature__text">
           <h2>Apple Watch companion</h2>
           <p>
             See today's status, your primary office, and this week's count at a glance. Tap to log
-            right from your wrist&nbsp;&mdash;&nbsp;it syncs automatically with your phone.
+            right from your wrist, and it syncs automatically with your phone.
           </p>
         </div>
         <div class="feature__visual feature__visual--watch-pair">
