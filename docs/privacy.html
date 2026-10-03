@@ -202,8 +202,9 @@
         Deletion request records contain the sign-in provider, request status, and timestamps. They
         do not retain your email address or device metadata. Completed records are unlinked from
         your account. Failed requests may retain an account identifier to allow cleanup. A daily job
-        removes request records older than 30 days. Service-provider backups may retain deleted data
-        until their backup retention period ends.
+        removes completed request records after 30 days and failed or unfinished ones after 365
+        days. Service-provider backups may retain deleted data until their backup retention period
+        ends.
       </p>
 
       <h2>Changes to This Policy</h2>
