@@ -47,7 +47,7 @@
 
     <main class="page page--fade-in">
       <h1>Privacy Policy</h1>
-      <p class="page-meta">Last updated: August 22, 2026</p>
+      <p class="page-meta">Last updated: October 2, 2026</p>
 
       <p class="intro">
         <strong>InDays</strong> is a workplace presence tracker that helps hybrid workers log
@@ -76,7 +76,8 @@
       <h2>What Stays on Your Device</h2>
       <p>
         InDays works without an account. When you continue without signing in, your app data is
-        stored locally in the app's on-device database and is not sent to our servers.
+        stored locally in the app's on-device database and is not sent to our servers. Your device's
+        backup settings may include local app data in an Apple device backup.
       </p>
       <ul>
         <li>Local profile settings</li>
@@ -166,7 +167,7 @@
       <h2>Optional Account and Sync Services</h2>
       <p>InDays uses trusted service providers to operate optional account and sync features:</p>
       <ul>
-        <li>Account, storage, sync, and account deletion services</li>
+        <li>Supabase for account authentication, database storage, sync, and account deletion</li>
         <li>Apple, Google, and GitHub for optional sign-in</li>
         <li>Apple system services for notifications, Shortcuts, and Apple Watch connectivity</li>
       </ul>
@@ -187,14 +188,23 @@
       <p>
         You can delete individual log entries from History and delete saved office locations or
         filters from their app screens. To clear all local data on this device, use
-        <strong>Wipe All Data</strong> in Profile.
+        <strong>History &rarr; Quick actions &rarr; Data management &rarr; Wipe All Data</strong>.
+        This action is available when you use the app without an account.
       </p>
       <p>
         To delete your signed-in account, synced app data, and local data on this device, open
         <strong>Profile &rarr; Account</strong> and use the <strong>Delete account</strong> action.
-        InDays may retain a minimal deletion request record, such as email, provider, request
-        status, timestamp, and user agent, where needed for security, support, legal compliance, or
-        dispute resolution.
+        Apple-linked accounts ask you to authorize Apple again so InDays can revoke the Apple
+        sign-in token. If this authorization fails, the app reports an error and does not delete
+        your account data.
+      </p>
+      <p>
+        Deletion request records contain the sign-in provider, request status, and timestamps. They
+        do not retain your email address or device metadata. Completed records are unlinked from
+        your account. Failed requests may retain an account identifier to allow cleanup. A daily job
+        removes completed request records after 30 days and failed or unfinished ones after 365
+        days. Service-provider backups may retain deleted data until their backup retention period
+        ends.
       </p>
 
       <h2>Changes to This Policy</h2>
