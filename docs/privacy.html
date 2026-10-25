@@ -14,7 +14,9 @@
       name="description"
       content="Read the InDays Privacy Policy to learn how your data is collected, used, and protected."
     />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
     <link rel="canonical" href="https://saadjs.github.io/in-days-docs/privacy.html" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="InDays" />
@@ -35,7 +37,16 @@
   <body>
     <nav class="site-nav">
       <div class="site-nav__inner">
-        <a href="features.html" class="site-nav__brand">InDays</a>
+        <a href="features.html" class="site-nav__brand">
+          <img
+            class="site-nav__icon"
+            src="images/favicons/apple-touch-icon.png"
+            alt=""
+            width="28"
+            height="28"
+          />
+          InDays
+        </a>
         <ul class="site-nav__links">
           <li><a href="features.html">Features</a></li>
           <li><a href="privacy.html">Privacy</a></li>
@@ -45,9 +56,9 @@
       </div>
     </nav>
 
-    <main class="page page--fade-in">
+    <main class="page page--fade-in page--prose">
       <h1>Privacy Policy</h1>
-      <p class="page-meta">Last updated: October 2, 2026</p>
+      <p class="page-meta">Last updated: October 25, 2026</p>
 
       <p class="intro">
         <strong>InDays</strong> is a workplace presence tracker that helps hybrid workers log
@@ -88,6 +99,10 @@
         <li>Reminder preferences (time, active days, enabled/disabled)</li>
         <li>Apple Watch companion data (today's status, office name, week count)</li>
       </ul>
+      <p>
+        When you browse prebuilt filters, the app downloads a public list of date ranges from our
+        service provider. That request does not send your logs, planned days, or office locations.
+      </p>
 
       <h2>Optional Syncing</h2>
       <p>
@@ -164,10 +179,13 @@
         same local logging and optional sync behavior as logging from the app.
       </p>
 
-      <h2>Optional Account and Sync Services</h2>
-      <p>InDays uses trusted service providers to operate optional account and sync features:</p>
+      <h2>Service Providers</h2>
+      <p>InDays relies on a small number of trusted service providers:</p>
       <ul>
-        <li>Supabase for account authentication, database storage, sync, and account deletion</li>
+        <li>
+          Supabase for account authentication, database storage, sync, account deletion, and the
+          prebuilt filter list
+        </li>
         <li>Apple, Google, and GitHub for optional sign-in</li>
         <li>Apple system services for notifications, Shortcuts, and Apple Watch connectivity</li>
       </ul>
@@ -220,7 +238,18 @@
       </p>
     </main>
 
-    <footer class="site-footer">&copy; 2026 InDays</footer>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__copy">&copy; 2026 InDays. Made for hybrid workers.</p>
+        <ul class="site-footer__links">
+          <li><a href="features.html">Features</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="mailto:in-days@saad.sh">in-days@saad.sh</a></li>
+        </ul>
+      </div>
+    </footer>
 
     <script src="main.js"></script>
   </body>

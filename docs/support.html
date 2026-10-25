@@ -14,7 +14,9 @@
       name="description"
       content="InDays support and FAQs: get answers about tracking and planning office days, reminders, widgets, Apple Watch, Siri, and managing your account."
     />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
     <link rel="canonical" href="https://saadjs.github.io/in-days-docs/support.html" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="InDays" />
@@ -35,7 +37,16 @@
   <body>
     <nav class="site-nav">
       <div class="site-nav__inner">
-        <a href="features.html" class="site-nav__brand">InDays</a>
+        <a href="features.html" class="site-nav__brand">
+          <img
+            class="site-nav__icon"
+            src="images/favicons/apple-touch-icon.png"
+            alt=""
+            width="28"
+            height="28"
+          />
+          InDays
+        </a>
         <ul class="site-nav__links">
           <li><a href="features.html">Features</a></li>
           <li><a href="privacy.html">Privacy</a></li>
@@ -45,270 +56,311 @@
       </div>
     </nav>
 
-    <main class="page page--fade-in">
+    <main class="page page--fade-in page--prose">
       <h1>Support</h1>
-      <p class="page-meta">Track your in-office days, effortlessly.</p>
+      <p class="page-meta">
+        Answers to common questions about InDays. Can't find what you need? Email
+        <a href="mailto:in-days@saad.sh">in-days@saad.sh</a>.
+      </p>
 
-      <h2 style="margin-top: 0.5rem">Frequently Asked Questions</h2>
+      <nav class="toc" aria-label="Support topics">
+        <a href="#getting-started">Getting started</a>
+        <a href="#logging-planning">Logging &amp; planning</a>
+        <a href="#reminders-widgets">Reminders, widgets &amp; automation</a>
+        <a href="#account-data">Account, sync &amp; data</a>
+      </nav>
 
-      <div class="faq-item">
-        <h2>What is InDays?</h2>
-        <p>
-          InDays helps hybrid workers track which days they go into the office. Log days, plan the
-          ones ahead, view your history, set targets, and get gentle reminders, all in one simple
-          app.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h2>How do I log an office day?</h2>
-        <p>
-          Open the <strong>Log</strong> tab and tap today's date on the calendar. You can optionally
-          select an office location before confirming.
-        </p>
-        <p>
-          You can also log from the Apple Watch companion app or a Siri Shortcut. These use your
-          primary office location if one is set. You can pick a different location when logging
-          manually.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h2>Can I log multiple days at once?</h2>
-        <p>
-          Yes. On the Log screen, tap the multi-date button to select up to 14&nbsp;days at a time.
-          This is useful for catching up on days you forgot to log.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h2>Can I plan days I haven't gone in yet?</h2>
-        <p>
-          Yes. Tap any future date on the Log tab's calendar to plan it, or open a saved filter and
-          tap <strong>Plan</strong> to lay out days against its target. You can plan up to a year
-          ahead.
-        </p>
-        <p>
-          Planning a day does not log it. A planned day shows as <strong>upcoming</strong>, turns
-          <strong>kept</strong> when you log that date, and reads <strong>missed</strong> if the day
-          passes without a log.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h2>How do I remove a planned day?</h2>
-        <p>
-          Tap the planned day again on the calendar to unplan it. Days you already logged stay
-          logged. Unplanning never deletes an entry.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h2>Can I edit or delete a day I already logged?</h2>
-        <p>
-          Yes. Open <strong>History &rarr; Manage logged days</strong>, pick the entry, and change
-          its date or office location, or delete it.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h2>Can I save more than one office?</h2>
-        <p>
-          Yes. Go to <strong>Profile &rarr; Locations</strong> to add up to five office locations.
-          You can mark one as primary so it gets selected automatically when you log from Siri or
-          Apple Watch.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h2>Do I need to create an account?</h2>
-        <p>
-          No. InDays works entirely offline with no account required. All your data is stored
-          locally on your device unless you choose to sync it.
-        </p>
-        <p>
-          If you'd like to sync your data across devices, you can optionally sign in with Apple,
-          Google, or GitHub.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h2>Which sign-in methods are available?</h2>
-        <p>
-          InDays supports Apple, Google, and GitHub sign-in. If you do not want an account, you can
-          keep using the app locally and skip sign-in.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h2>How does syncing work?</h2>
-        <p>
-          When you sign in, your logs, planned days, office locations, and filters sync so they show
-          up on your other devices. Changes you make on one device are synced automatically when the
-          app has an internet connection.
-        </p>
-        <p>
-          Signing out normally clears synced account data from the device after sync finishes. If
-          there are unsynced changes, InDays keeps local data so it can be uploaded the next time
-          you sign in.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h2>What are saved and prebuilt filters?</h2>
-        <p>
-          InDays lets you save date ranges in History so you can reuse them later. You can also add
-          prebuilt filters for common ranges, then set a target number of office days for each one.
-        </p>
-        <p>Saved filters are limited to 12 at a time, so you can keep the ones you use most.</p>
-        <p>
-          Each filter can be pinned for widgets (up to three) and opened in the planner to place the
-          days you still need to hit its target.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h2>Can I set up reminders?</h2>
-        <p>
-          Yes. Go to <strong>Profile &rarr; Reminders</strong> and enable the end-of-day prompt. You
-          can choose the time and which days of the week you'd like to be reminded.
-        </p>
-        <p>
-          The reminder carries a <strong>Log today</strong> action, so you can record the day from
-          the notification itself. Reminders are scheduled on your device and need notification
-          permission the first time you enable them.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h2>Do planned days come with their own reminders?</h2>
-        <p>
-          Yes. If reminders are on, InDays nudges you the evening before a day you planned, then
-          asks again that evening if the day still isn't logged. The evening-before nudge has no log
-          button, because you can't log a day before it happens.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h2>Are there Home Screen and Lock Screen widgets?</h2>
-        <p>
-          Yes. Pin up to three saved filters from <strong>Saved filters</strong> and they show up in
-          the widgets. The first pinned filter is the primary one on the Lock Screen. Home Screen
-          widgets show progress and can log today without opening the app.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h2>Does InDays have an Apple Watch app?</h2>
-        <p>
-          Yes. The companion Watch app shows whether you've logged today, your primary office, and
-          how many days you've been in this week. Tap &ldquo;Log today&rdquo; to record a visit
-          right from your wrist.
-        </p>
-        <p>
-          The Watch syncs automatically with your iPhone. No setup is required beyond installing the
-          app.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h2>What is the default office location?</h2>
-        <p>
-          If you set a primary office in your profile, it is automatically used when you log from
-          the Apple Watch or a Siri Shortcut. When logging manually from the app you can always pick
-          a different location. If no primary office is set, logs are saved without a location.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h2>Can I use Siri?</h2>
-        <p>
-          Yes. You can add a shortcut to quickly log today's office visit with a tap or voice
-          command. Your primary office location is used automatically if one is set.
-        </p>
-      </div>
-
-      <div class="faq-item">
-        <h2>Can I automate logging with Shortcuts?</h2>
-        <p>
-          Yes. Open the Shortcuts app, create a Personal Automation, and add InDays' Log In-Office
-          action. You can run it when you arrive at the office, when you leave, or at any time you
-          want the log to happen automatically.
-        </p>
-        <p>
-          If you set a primary office, InDays uses it for the log so your automation stays simple.
-          InDays does not request device location permission; arrival and departure triggers are
-          handled by Apple's Shortcuts app.
-        </p>
-      </div>
-
-      <div class="support-shot support-shot--pair">
-        <div class="support-shot__images">
-          <div class="device-phone">
-            <img
-              src="images/shortcuts-automation.png"
-              alt="Shortcuts app showing an automation that logs an office day"
-            />
-          </div>
-          <div class="device-phone">
-            <img
-              src="images/when-i-arrive.png"
-              alt="Personal Automation set to run when arriving at a location"
-            />
-          </div>
+      <section class="faq-section" id="getting-started" aria-labelledby="getting-started-title">
+        <h2 class="faq-section__title" id="getting-started-title">Getting started</h2>
+        <div class="faq-item" id="what-is-indays">
+          <h3>What is InDays?</h3>
+          <p>
+            InDays helps hybrid workers keep track of the days they go into the office. Log days,
+            plan the ones ahead, review your history, set targets, and get gentle reminders, all in
+            one simple app.
+          </p>
         </div>
-        <p class="support-shot__caption">
-          A Shortcuts automation can run on arrival, departure, time of day, and many other
-          triggers.
-        </p>
-      </div>
 
-      <div class="faq-item">
-        <h2>Where do I see what changed in the latest version?</h2>
-        <p>
-          InDays shows a What's New sheet automatically the first time you open the app after an
-          update that adds something worth calling out.
-        </p>
-      </div>
+        <div class="faq-item" id="devices">
+          <h3>Which devices does InDays work on?</h3>
+          <p>
+            InDays runs on iPhone and iPad. The companion Apple Watch app works with a Watch paired
+            to your iPhone, and widgets are available on the Home Screen and Lock Screen.
+          </p>
+        </div>
 
-      <div class="faq-item">
-        <h2>What data does the app collect?</h2>
-        <p>
-          Only what you provide: your logs, planned days, office locations, profile details, saved
-          filters, reminder settings, and optional account info if you sign in. No ads, analytics,
-          or tracking. See our full
-          <a href="privacy.html">Privacy Policy</a> for details.
-        </p>
-      </div>
+        <div class="faq-item" id="account-required">
+          <h3>Do I need to create an account?</h3>
+          <p>
+            No. InDays works without an account, and your data stays on your device unless you
+            choose to sync it.
+          </p>
+          <p>
+            If you want your data on more than one device, you can sign in with Apple, Google, or
+            GitHub at any time.
+          </p>
+        </div>
 
-      <div class="faq-item">
-        <h2>How do I delete my data or account?</h2>
-        <p>
-          You can delete individual log entries from the History tab. To delete your entire account
-          and all synced data, open <strong>Profile &rarr; Account</strong> and tap
-          <strong>Delete account</strong>.
-        </p>
-        <p>
-          The in-app delete flow removes your cloud data, clears local data on the device, and signs
-          you out. When using the app without an account, clear local app data from
-          <strong>History &rarr; Quick actions &rarr; Data management &rarr; Wipe All Data</strong>.
-          Apple-linked account deletion asks you to authorize Apple again to revoke its sign-in
-          token. If that step fails, retry before assuming your account was deleted.
-        </p>
-      </div>
+        <div class="faq-item" id="internet">
+          <h3>Does the app need an internet connection?</h3>
+          <p>
+            No. Logging, planning, history, reminders, widgets, and the Watch app all work offline.
+            You only need a connection to sign in, sync, or load the latest prebuilt filters.
+          </p>
+        </div>
+      </section>
 
-      <div class="faq-item">
-        <h2>Does the app require an internet connection?</h2>
-        <p>
-          No. InDays works without an internet connection. You only need one if you choose to sign
-          in and sync your data.
-        </p>
-        <p>
-          Profile shows cloud sync status. If sync fails, your changes remain saved on this device;
-          reconnect and tap <strong>Retry</strong>. Wait for successful sync before relying on
-          another device to show the changes.
-        </p>
-      </div>
+      <section class="faq-section" id="logging-planning" aria-labelledby="logging-planning-title">
+        <h2 class="faq-section__title" id="logging-planning-title">Logging &amp; planning</h2>
+        <div class="faq-item" id="log-a-day">
+          <h3>How do I log an office day?</h3>
+          <p>
+            Open the <strong>Log</strong> tab. Today is selected by default, so just tap
+            <strong>Log today</strong>. To record a different office for that entry, tap
+            <strong>Change</strong> next to the office location first.
+          </p>
+          <p>
+            You can also log from a Home Screen widget, the Apple Watch app, Siri, or a Shortcuts
+            automation. These use your primary office if you've set one.
+          </p>
+        </div>
+
+        <div class="faq-item" id="log-multiple">
+          <h3>Can I log multiple days at once?</h3>
+          <p>
+            Yes. On the Log tab, tap <strong>Add day</strong> (or <strong>Add more</strong>) next to
+            Selected days and choose up to 14&nbsp;days, then log them together. It's handy for
+            catching up on days you forgot. Days you've already logged are skipped.
+          </p>
+        </div>
+
+        <div class="faq-item" id="edit-log">
+          <h3>Can I edit or delete a day I already logged?</h3>
+          <p>
+            Yes. Open <strong>History &rarr; Manage logged days</strong>, pick the entry, and change
+            its date or office, or delete it.
+          </p>
+        </div>
+
+        <div class="faq-item" id="plan-days">
+          <h3>Can I plan days I haven't gone in yet?</h3>
+          <p>
+            Yes. On the Log tab, tap today or any future date on the calendar to plan it. To plan
+            against a target, tap a saved filter's progress card, or <strong>Plan days</strong> in
+            Saved filters, to open its planner. You can plan up to a year ahead.
+          </p>
+          <p>
+            Planning a day doesn't log it. A planned day shows as <strong>upcoming</strong>, becomes
+            <strong>kept</strong> once you log that date, and shows as <strong>missed</strong> if
+            the day passes without a log.
+          </p>
+        </div>
+
+        <div class="faq-item" id="unplan">
+          <h3>How do I remove a planned day?</h3>
+          <p>
+            Tap the planned day again on the calendar to unplan it. Unplanning never deletes a
+            logged entry.
+          </p>
+        </div>
+
+        <div class="faq-item" id="locations">
+          <h3>Can I save more than one office?</h3>
+          <p>
+            Yes. Go to <strong>Profile &rarr; Locations</strong> to save up to five offices, and
+            mark one as your primary office.
+          </p>
+        </div>
+
+        <div class="faq-item" id="primary-office">
+          <h3>What is the primary office used for?</h3>
+          <p>
+            Your primary office is attached automatically when you log, including from widgets, the
+            Apple Watch, Siri, and Shortcuts. In the app you can pick a different office for any
+            entry. If you haven't set a primary office, logs are saved without a location.
+          </p>
+        </div>
+      </section>
+
+      <section class="faq-section" id="reminders-widgets" aria-labelledby="reminders-widgets-title">
+        <h2 class="faq-section__title" id="reminders-widgets-title">
+          Reminders, widgets &amp; automation
+        </h2>
+        <div class="faq-item" id="filters">
+          <h3>What are saved and prebuilt filters?</h3>
+          <p>
+            Saved filters are reusable date ranges, each with an optional target number of office
+            days. Create your own, or start from a prebuilt range and adjust it. InDays shows your
+            progress and tells you when you've hit the target.
+          </p>
+          <p>
+            You can keep up to 12 saved filters, pin up to three for widgets, and open any of them
+            in the planner to place the days you still need.
+          </p>
+        </div>
+
+        <div class="faq-item" id="reminders">
+          <h3>Can I set up reminders?</h3>
+          <p>
+            Yes. Go to <strong>Profile &rarr; Reminders</strong>, turn on the end-of-day prompt, and
+            choose the time and the weekdays you want it.
+          </p>
+          <p>
+            Each reminder has a <strong>Log today</strong> action, so you can record the day
+            straight from the notification. Reminders are scheduled on your device and need
+            notification permission the first time you turn them on.
+          </p>
+        </div>
+
+        <div class="faq-item" id="plan-reminders">
+          <h3>Do planned days get their own reminders?</h3>
+          <p>
+            Yes. With reminders on, InDays nudges you the evening before a day you planned, then
+            asks again that evening if the day still isn't logged. The evening-before nudge has no
+            log button, because you can't log a day before it happens.
+          </p>
+        </div>
+
+        <div class="faq-item" id="widgets">
+          <h3>Are there Home Screen and Lock Screen widgets?</h3>
+          <p>
+            Yes. Pin up to three saved filters from <strong>Saved filters</strong> and they appear
+            in the widgets. The first pinned filter is the one shown on the Lock Screen. Home Screen
+            widgets show your progress and can log today without opening the app.
+          </p>
+        </div>
+
+        <div class="faq-item" id="apple-watch">
+          <h3>Does InDays have an Apple Watch app?</h3>
+          <p>
+            Yes. The Watch app shows whether you've logged today, your primary office, and how many
+            days you've been in this week. Tap <strong>Log today</strong> to record the day from
+            your wrist.
+          </p>
+          <p>
+            It stays in sync with your iPhone automatically. There's nothing to set up beyond
+            installing it.
+          </p>
+        </div>
+
+        <div class="faq-item" id="siri">
+          <h3>Can I use Siri?</h3>
+          <p>
+            Yes. Say &ldquo;Log in office day in InDays&rdquo; or run the
+            <strong>Log In-Office</strong> shortcut. Your primary office is used automatically if
+            you've set one.
+          </p>
+        </div>
+
+        <div class="faq-item" id="shortcuts">
+          <h3>Can I automate logging with Shortcuts?</h3>
+          <p>
+            Yes. In the Shortcuts app, create a Personal Automation and add InDays'
+            <strong>Log In-Office Day</strong> action. Run it when you arrive at the office, when
+            you leave, or at whatever time suits your routine.
+          </p>
+          <p>
+            InDays doesn't ask for location permission. Arrival and departure triggers are handled
+            entirely by Apple's Shortcuts app.
+          </p>
+        </div>
+
+        <div class="support-shot support-shot--pair">
+          <div class="support-shot__images">
+            <div class="device-phone">
+              <img
+                src="images/shortcuts-automation.png"
+                alt="Shortcuts app showing an automation that logs an office day"
+              />
+            </div>
+            <div class="device-phone">
+              <img
+                src="images/when-i-arrive.png"
+                alt="Personal Automation set to run when arriving at a location"
+              />
+            </div>
+          </div>
+          <p class="support-shot__caption">
+            A Shortcuts automation can run on arrival, departure, a time of day, and many other
+            triggers.
+          </p>
+        </div>
+
+        <div class="faq-item" id="whats-new">
+          <h3>Where can I see what's new?</h3>
+          <p>
+            InDays shows a What's New sheet the first time you open the app after an update with
+            something worth calling out. You can open it again anytime from
+            <strong>Profile &rarr; What's New</strong>.
+          </p>
+        </div>
+      </section>
+
+      <section class="faq-section" id="account-data" aria-labelledby="account-data-title">
+        <h2 class="faq-section__title" id="account-data-title">Account, sync &amp; data</h2>
+        <div class="faq-item" id="sign-in">
+          <h3>Which sign-in methods are available?</h3>
+          <p>
+            Apple, Google, and GitHub. Signing in is optional; skip it and InDays keeps everything
+            on your device.
+          </p>
+        </div>
+
+        <div class="faq-item" id="sync">
+          <h3>How does syncing work?</h3>
+          <p>
+            When you're signed in, your logs, planned days, office locations, and saved filters sync
+            so they appear on your other devices. Changes sync automatically whenever you're online,
+            and you can pull to refresh to sync right away.
+          </p>
+          <p>
+            When you sign out, InDays clears synced account data from the device once syncing
+            finishes. If some changes haven't synced yet, it keeps them on the device so they can
+            upload the next time you sign in.
+          </p>
+        </div>
+
+        <div class="faq-item" id="sync-failed">
+          <h3>What if a sync fails?</h3>
+          <p>
+            Your changes stay saved on the device. Profile shows a
+            <strong>Cloud sync failed</strong> notice; once you're back online, tap
+            <strong>Retry</strong>. Wait for a successful sync before expecting the changes on
+            another device.
+          </p>
+        </div>
+
+        <div class="faq-item" id="data">
+          <h3>What data does the app collect?</h3>
+          <p>
+            Only what you enter and what the app needs to run: your logs, planned days, office
+            locations, profile details, saved filters, reminder settings, and basic account details
+            if you sign in. There are no ads, analytics, or tracking. See the
+            <a href="privacy.html">Privacy Policy</a> for details.
+          </p>
+        </div>
+
+        <div class="faq-item" id="delete">
+          <h3>How do I delete my data or account?</h3>
+          <p>
+            You can delete individual entries from
+            <strong>History &rarr; Manage logged days</strong>. To delete your account and all
+            synced data, open <strong>Profile &rarr; Account</strong> and tap
+            <strong>Delete account</strong>. This removes your cloud data, clears local data on the
+            device, and signs you out.
+          </p>
+          <p>
+            If you signed in with Apple, you'll be asked to confirm with Apple once more so InDays
+            can revoke its sign-in token. If that step fails, your account isn't deleted yet, so try
+            again.
+          </p>
+          <p>
+            Using the app without an account? Clear everything from
+            <strong>History &rarr; Quick actions &rarr; Data management &rarr; Wipe All Data</strong
+            >.
+          </p>
+        </div>
+      </section>
 
       <div class="contact-box">
         <strong>Still need help?</strong>
@@ -318,7 +370,18 @@
       </div>
     </main>
 
-    <footer class="site-footer">&copy; 2026 InDays</footer>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__copy">&copy; 2026 InDays. Made for hybrid workers.</p>
+        <ul class="site-footer__links">
+          <li><a href="features.html">Features</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="mailto:in-days@saad.sh">in-days@saad.sh</a></li>
+        </ul>
+      </div>
+    </footer>
 
     <script src="main.js"></script>
   </body>

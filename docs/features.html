@@ -12,32 +12,34 @@
     <link rel="manifest" href="images/favicons/site.webmanifest" />
     <meta
       name="description"
-      content="Track and plan your in-office days with InDays for iPhone and Apple Watch. Log from the Home Screen widget, Siri, Shortcuts, or your wrist, plan the days ahead, and hit your targets."
+      content="Track and plan your in-office days with InDays for iPhone, iPad, and Apple Watch. Log from a widget, Siri, Shortcuts, or your wrist, plan the days ahead, and hit your targets."
     />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
     <link rel="canonical" href="https://saadjs.github.io/in-days-docs/features.html" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="InDays" />
     <meta property="og:title" content="Features – InDays" />
     <meta
       property="og:description"
-      content="Track and plan your in-office days with InDays for iPhone and Apple Watch. Log from the Home Screen widget, Siri, Shortcuts, or your wrist, plan the days ahead, and hit your targets."
+      content="Track and plan your in-office days with InDays for iPhone, iPad, and Apple Watch. Log from a widget, Siri, Shortcuts, or your wrist, plan the days ahead, and hit your targets."
     />
     <meta property="og:url" content="https://saadjs.github.io/in-days-docs/features.html" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Features – InDays" />
     <meta
       name="twitter:description"
-      content="Track and plan your in-office days with InDays for iPhone and Apple Watch. Log from the Home Screen widget, Siri, Shortcuts, or your wrist, plan the days ahead, and hit your targets."
+      content="Track and plan your in-office days with InDays for iPhone, iPad, and Apple Watch. Log from a widget, Siri, Shortcuts, or your wrist, plan the days ahead, and hit your targets."
     />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "MobileApplication",
         "name": "InDays",
-        "operatingSystem": "iOS",
+        "operatingSystem": "iOS, iPadOS, watchOS",
         "applicationCategory": "ProductivityApplication",
-        "description": "Track and plan your in-office days. Log from your iPhone, Apple Watch, widgets, Siri, or Shortcuts.",
+        "description": "Track and plan your in-office days. Log from your iPhone, iPad, Apple Watch, widgets, Siri, or Shortcuts.",
         "url": "https://saadjs.github.io/in-days-docs/features.html"
       }
     </script>
@@ -46,7 +48,16 @@
   <body>
     <nav class="site-nav">
       <div class="site-nav__inner">
-        <a href="features.html" class="site-nav__brand">InDays</a>
+        <a href="features.html" class="site-nav__brand">
+          <img
+            class="site-nav__icon"
+            src="images/favicons/apple-touch-icon.png"
+            alt=""
+            width="28"
+            height="28"
+          />
+          InDays
+        </a>
         <ul class="site-nav__links">
           <li><a href="features.html">Features</a></li>
           <li><a href="privacy.html">Privacy</a></li>
@@ -58,16 +69,37 @@
 
     <main class="page page--fade-in page--features">
       <div class="features-hero">
+        <img
+          class="features-hero__icon"
+          src="images/favicons/apple-touch-icon.png"
+          alt="InDays app icon"
+          width="88"
+          height="88"
+        />
+        <p class="status-pill">
+          <span class="status-pill__dot" aria-hidden="true"></span>
+          Coming soon to the App Store
+        </p>
         <h1>Your office days,<br />tracked effortlessly.</h1>
         <p class="intro">
-          Log from your iPhone, Apple Watch, widgets, Siri, or Shortcuts. Plan the days ahead and
-          track them against your targets. Sign in with Apple, Google, or GitHub when you want to
-          back up and sync across devices.
+          Log from your iPhone, iPad, Apple Watch, widgets, Siri, or Shortcuts. Plan the days ahead
+          and track them against your targets. No account needed, and you can sign in with Apple,
+          Google, or GitHub whenever you want to sync across devices.
         </p>
+        <!--
+          When the App Store listing goes live, swap the CTA below for:
+          <a class="cta-button" href="https://apps.apple.com/app/id6754492547">Download on the App Store</a>
+          and replace the status pill text with "Available on the App Store".
+        -->
         <a class="cta-button" href="https://testflight.apple.com/join/tYK39N6c">
           Join the TestFlight beta
         </a>
-        <p class="cta-note">Requires the TestFlight app on iOS.</p>
+        <p class="cta-note">Want it today? Try the beta through Apple's TestFlight app.</p>
+        <ul class="hero-highlights">
+          <li>No account required</li>
+          <li>No ads, analytics, or tracking</li>
+          <li>iPhone, iPad &amp; Apple&nbsp;Watch</li>
+        </ul>
       </div>
 
       <!-- Log -->
@@ -75,12 +107,14 @@
         <div class="feature__text">
           <h2>Log your day</h2>
           <p>
-            Tap today to log it. Your primary office is attached automatically. Change it anytime,
-            or pick a different one per entry. Need to catch up? Select up to 14&nbsp;days at once.
+            Today is already selected when you open the app, so one tap on
+            <strong>Log today</strong> records it. Your primary office is attached automatically,
+            and you can change it for any entry. Need to catch up? Add past days and log up to
+            14&nbsp;at once.
           </p>
           <p>
-            The Log tab also carries a month calendar of everything you've logged, plus progress on
-            your saved filters, so today's tap and the bigger picture sit on one screen.
+            Below that, a month calendar shows everything you've logged, plus progress on your saved
+            filters, so today's tap and the bigger picture sit on one screen.
           </p>
         </div>
         <div class="feature__visual">
@@ -98,9 +132,9 @@
         <div class="feature__text">
           <h2>Plan the days ahead</h2>
           <p>
-            Tap the days you intend to go in, up to a year out. Plans live alongside your logs
-            without becoming them: a planned day only counts as an office day once you actually log
-            it.
+            Tap the days you intend to go in on the Log tab's calendar, up to a year out. Plans live
+            alongside your logs without becoming them: a planned day only counts as an office day
+            once you actually log it.
           </p>
           <p>
             Every plan reads as <strong>upcoming</strong>, <strong>kept</strong> once you log that
@@ -108,8 +142,8 @@
             planner and InDays shows how many days you still need to place to hit its target.
           </p>
           <p>
-            Plan from the calendar on the Log tab, or from
-            <strong>History &rarr; Plan</strong> when you want the target and coverage in view.
+            Want the target and coverage in view? Tap a saved filter's progress card, or
+            <strong>Plan days</strong> in Saved filters, to open its planner.
           </p>
         </div>
         <div class="feature__visual">
@@ -176,9 +210,9 @@
         <div class="feature__text">
           <h2>Automate with Shortcuts</h2>
           <p>
-            Build a Personal Automation in the Shortcuts app and drop in InDays' Log In-Office
-            action. Trigger it when you arrive at the office, leave for the day, or whenever your
-            routine starts.
+            Build a Personal Automation in the Shortcuts app and add InDays'
+            <strong>Log In-Office Day</strong> action. Trigger it when you arrive at the office,
+            leave for the day, or whenever your routine starts.
           </p>
           <p>
             It uses your primary office automatically, so you can turn a daily commute into a
@@ -202,7 +236,8 @@
           <h2>Sync and manage your account</h2>
           <p>
             Use Apple, Google, or GitHub to keep your logs, locations, and filters in sync across
-            devices. If you prefer to stay local, you can keep using the app without signing in.
+            devices. Changes sync on their own, and you can pull to refresh to sync right away. If
+            you prefer to stay local, you can keep using the app without signing in.
           </p>
           <p>
             From <strong>Profile &rarr; Account</strong>, you can review your sign-in method, sign
@@ -326,7 +361,18 @@
       </section>
     </main>
 
-    <footer class="site-footer">&copy; 2026 InDays</footer>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__copy">&copy; 2026 InDays. Made for hybrid workers.</p>
+        <ul class="site-footer__links">
+          <li><a href="features.html">Features</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="mailto:in-days@saad.sh">in-days@saad.sh</a></li>
+        </ul>
+      </div>
+    </footer>
 
     <script src="main.js"></script>
   </body>
