@@ -64,28 +64,25 @@
       </p>
 
       <h2>What we store</h2>
+      <p>
+        The MCP service uses your InDays app account and the same database as the app's sync. It
+        reads and changes:
+      </p>
       <ul>
-        <li>
-          Your chosen sign-in provider (Google or GitHub), its account identifier, and your email
-          address when verified by the provider.
-        </li>
-        <li>Your timezone and selected company.</li>
-        <li>
-          Logged, planned, and excused days, including dates and any locations or notes you enter.
-        </li>
-        <li>Your saved filters, date ranges, and targets.</li>
+        <li>Logged and planned days, including dates and any locations or notes you enter.</li>
+        <li>Your saved filters, date ranges, and targets, and your office locations.</li>
+        <li>Your timezone, which the service saves to your profile.</li>
         <li>Authorization records and tokens for the AI apps you connect.</li>
       </ul>
       <p>
-        Importing an app export copies supported days, filters, and timezone settings into the MCP
-        service. The native app and MCP service do not automatically sync.
+        Days logged through the MCP service are marked as coming from it and sync to the app like
+        any other change.
       </p>
 
       <h2>Signing in</h2>
       <p>
-        Sign-in with Google or GitHub is required. We never see your provider password. Provider
-        access tokens are used to retrieve your account identifier and verified email, then
-        discarded.
+        You sign in with the Apple, Google, or GitHub account you use in the app. We never see your
+        provider password.
       </p>
 
       <h2>How we use your data</h2>
@@ -97,11 +94,14 @@
       <h2>Service providers and AI apps</h2>
       <ul>
         <li>
-          Cloudflare hosts the service, stores attendance and profile data in D1, and stores
-          authorization records in KV. It processes request information, such as IP addresses, to
-          deliver the service.
+          Supabase handles sign-in, AI app authorizations, and stores your attendance and profile
+          data, as it does for the app.
         </li>
-        <li>Google or GitHub handles your chosen sign-in.</li>
+        <li>
+          Cloudflare hosts the MCP service and processes request information, such as IP addresses,
+          to deliver it.
+        </li>
+        <li>Apple, Google, or GitHub handles your chosen sign-in.</li>
         <li>
           Your connected AI app sends requests and receives their results. Its own privacy policy
           governs its processing of your conversation and those results.
@@ -112,14 +112,14 @@
 
       <h2>Retention and deletion</h2>
       <p>
-        Your MCP records remain until you delete them. Ask your AI app to clear specific days or
-        delete saved filters. To remove your days, filters, profile, and all MCP authorizations, ask
-        it to delete your InDays MCP account and confirm the request.
+        Your records remain until you delete them. Ask your AI app to clear specific days or delete
+        saved filters. To delete your account and all its data, use Delete Account in the InDays
+        app, as described in the <a href="privacy.html">app privacy policy</a>.
       </p>
       <p>
-        Disconnecting a plugin alone does not delete your MCP data. Deleting an MCP account does not
-        delete your native app account or copies already held by an AI app. Service-provider backups
-        may retain deleted data until their retention periods end.
+        Disconnecting a plugin alone does not delete your data. Deleting your account does not
+        delete copies already held by an AI app. Service-provider backups may retain deleted data
+        until their retention periods end.
       </p>
       <p>
         You can also request deletion by emailing
